@@ -104,15 +104,18 @@
                             <div class="row">
 
                                 <div class="form-group col-lg-12" :class="{'has-error': error.updateContent}">
-                                    Name:<input v-model="updateData.content.name" class="form-control" name="name" id="name" required></textarea>
+									<label for="lgFormGroupInput">Name:</label>
+                                    <input v-model="updateData.content.name" class="form-control" name="name" id="name" required></textarea>
                                     <small class="help-block">{{ error.updateContent }}</small>
                                 </div>
 								<div class="form-group col-lg-12" :class="{'has-error': error.updateContent}">
-                                    Surname:<input v-model="updateData.content.surname" class="form-control" name="surname" id="surname" required></textarea>
+									<label for="lgFormGroupInput">Surname:</label>
+                                    <input v-model="updateData.content.surname" class="form-control" name="surname" id="surname" required></textarea>
                                     <small class="help-block">{{ error.updateContent }}</small>
                                 </div>
 								<div class="form-group col-lg-12" :class="{'has-error': error.updateContent}">
-                                    Number:<input v-model="updateData.content.number" class="form-control" name="number" id="number" required></textarea>
+									<label for="lgFormGroupInput">Number:</label>
+                                    <input v-model="updateData.content.number" class="form-control" name="number" id="number" required></textarea>
                                     <small class="help-block">{{ error.number }}</small>
                                 </div>
 
@@ -143,15 +146,18 @@
                             <div class="row">
 
                                 <div class="form-group col-lg-12" :class="{'has-error': error.createContent}">
-                                    Name:<input v-model="createData.content.name" class="form-control" name="addname" id="addname" required></textarea>
+                                    <label for="lgFormGroupInput">Name:</label>
+									<input v-model="createData.content.name" class="form-control" name="addname" id="addname" required></textarea>
                                     <small class="help-block">{{ error.createContent }}</small>
                                 </div>
 								<div class="form-group col-lg-12" :class="{'has-error': error.createContent}">
-                                    Surname:<input v-model="createData.content.surname" class="form-control" name="addsurname" id="addsurname" required></textarea>
+                                    <label for="lgFormGroupInput">Surname:</label>
+									<input v-model="createData.content.surname" class="form-control" name="addsurname" id="addsurname" required></textarea>
                                     <small class="help-block">{{ error.createContent }}</small>
                                 </div>
 								<div class="form-group col-lg-12" :class="{'has-error': error.createContent}">
-                                    Number:<input v-model="createData.content.number" class="form-control" name="addnumber" id="addumber" required></textarea>
+                                    <label for="lgFormGroupInput">Number:</label>
+									<input v-model="createData.content.number" class="form-control" name="addnumber" id="addumber" required></textarea>
                                     <small class="help-block">{{ error.number }}</small>
                                 </div>
 
