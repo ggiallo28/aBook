@@ -104,3 +104,24 @@ class AddressController extends Controller {
     }
 
 }
+
+	/*
+	Escape per evitare attacchi tramitefunzioni quali: htmlspecialchars(), htmlentities(), strip_tags()
+	htmlspecialchars()
+	echo htmlspecialchars("<a href='test'>Test</a>", ENT_QUOTES);
+	# L'output sarà: 
+	&lt;a href=&#039;test&#039;&gt;Test&lt;/a&gt; dato che converte i caratteri "particolari", in codice html.
+	htmlentities
+	echo htmlentities("I'm <b>bold</b>");
+	# L'Output sarà di conseguenza: 
+	I'm &lt;b&gt;bold&lt;/b&gt;
+	strip_tags
+	$text='<p>Testo interno al paragrafo.</p><!-- commento --> <a href="#ancora">Altro te-sto</a>';
+	echo strip_tags($text);
+	# Il particolare output di questa funzione, sarà: 
+	Testo interno al paragrafo. Altro testo
+	# E' possibile non rimuovere alcuni tag utilizzando il secondo parametro opzionale:
+	echo strip_tags($text,'<p>');
+	# Il particolare output di questa funzione, sarà: 
+	<p>Testo interno al paragrafo.</p> Altro testo
+	*/
