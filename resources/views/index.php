@@ -11,6 +11,9 @@
         <!-- Bootstrap Core CSS -->
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 
+        <!-- Sweet Alert CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css" rel="stylesheet">
+
         <!-- Custom CSS -->
         <link href="css/grayscale.css" rel="stylesheet">
 
